@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">HKBook</string>
+    <string name="housekeepingbook">가계부</string>
+    <string name="withdraw">출금</string>
+    <string name="deposit">입금</string>
+    <string name="detailtitle">상세내역</string>
+    <string name="delete">삭제</string>
+    <string name="main_title">수입, 지출 내역</string>
+    <string name="income">입금</string>
+    <string name="expense">출금</string>
+
+
+    <string name="expense_day">오늘의 지출</string>
+    <string name="expense_month">이번달 지출</string>
+
+    <string name="income_day">오늘의 수입</string>
+    <string name="income_month">이번달 수입</string>
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btn_left"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_toLeftOf="@+id/txt_title"
+            android:background="@drawable/ic_back_gray" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="2018/06/07"
+            android:textColor="#232323"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/btn_right"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_toRightOf="@+id/txt_title"
+            android:background="@drawable/ic_back_r_gray" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="37.5dp"
+        android:layout_below="@+id/layout_top_menu"
+        android:background="#eee9e9"
+        android:gravity="center_vertical"
+        android:paddingLeft="10.5dp"
+        android:text="@string/main_title" />
+
+    <ListView
+        android:id="@+id/lv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/line"
+        android:layout_below="@+id/txt_main_title" />
+
+    <ImageView
+        android:id="@+id/btn_add"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_above="@+id/rl_box"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="5.8dp"
+        android:background="@drawable/btn_add_photo_keycolor" />
+
+    <ImageView
+        android:layout_above="@+id/rl_box"
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#eee9e9" />
+
+    <LinearLayout
+        android:id="@+id/rl_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_box2"
+        android:gravity="center_vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/shape_income_oval" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_income_day0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/income_day"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_income_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_income_day0"
+                android:text="0"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_income_month0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/income_month"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/tv_income_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_income_month0"
+                android:text="0"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_box2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/shape_expense_oval" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_expense_day0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expense_day"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_expense_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_expense_day0"
+                android:text="0"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_expense_month0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expense_month"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/tv_expense_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_expense_month0"
+                android:text="0"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

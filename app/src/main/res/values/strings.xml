@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">HKBook</string>
+    <string name="housekeepingbook">House keeping book</string>
+    <string name="createdby">created by kimseongjae</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="deposit">Deposit</string>
+    <string name="detailtitle">Detail</string>
+    <string name="delete">Delete</string>
+    <string name="main_title">Income, Expense List</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+
+    <string name="expense_day">spending today</string>
+    <string name="expense_month">spend this month</string>
+
+    <string name="income_day">incoming today</string>
+    <string name="income_month">income this month</string>
+</resources>
